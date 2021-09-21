@@ -8,7 +8,8 @@ terraform init
 terraform plan -var-file='production.tfvars'
 ```
 Note:
-If you want to enable SSL for the application, please provide the certificate arn variable. Or if you leave it blank as default, your app is running with on port 80 only
+If you want to enable SSL for the application, please provide the certificate arn variable. Or if you leave it blank as default, your app will be running with on port 80 only.
+
 File `~/.aws/credentials` points to credentials file located in your home directory. It has following format:
 ```
 [default]
