@@ -7,7 +7,7 @@ provider "aws" {
 
 resource "aws_key_pair" "key" {
   key_name   = "${var.environment}"
-  public_key = "${file("./.ssh/ssh_key.pub")}"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgNMP20LpG1Zop2d/kOoas3vaVtDCuBC4tx5xXgdp9T5LLyclh8ohBpw234/SruMLtbgVbJwTYw0hy3eU4uRQk4V1HPJRUR8Ub3/H8wy27bjzRr07YCb8wg3R76RzAhkzGCTqZ4qRJyUFTDiDuTm6BPHmqhqT1xtj13Wr73VtiWRcDIc1j+b6yTBZ+eJ3Bb6ZRZMxb5qNxTDCL+PHT7WwRVvcxEhlcvdc751hwESy84X/ADt1MthERXLbqFlZTqZzYb/0iQMG+0HzZjNZ6rXf2KRrAiNUWwetoPq434yL9Y4xsE8MC3rLXlmC7l6Lj9NPDF8Qzhqit26gMGqYhJvXQ=="
 }
 
 module "networking" {
